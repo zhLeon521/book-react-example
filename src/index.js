@@ -1,10 +1,46 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 
+// 无状态组件
+// always return JSX
+
+// function Geeting() {
+//   return <h2>
+//     This is my first components
+//   </h2>
+// }
+
+// const Geeting = () => {
+//   return React.createElement('h2', {}, 'hello world')
+// }
+
+
+
+// function Geeting() {
+//   return <div>
+//     <h2>
+//       This is my first components
+//     </h2>
+//   </div>
+// }
+
+// const Geeting = () => {
+//   return React.createElement('div', {}, React.createElement('h1', {}, 'hello world'))
+// }
+
+
 function Geeting() {
-  return <h4>
-    This is my first components
-  </h4>
+  return <div classNAme="">
+    <h2>
+      This is my first components
+    </h2>
+    <ul>
+      <li><a href='#'>hello world</a></li>
+      <li><a href='#'>hello react</a></li>
+      <img src='' alt="" />
+      <input type="text" name='' id=''/>
+    </ul>
+  </div>
 }
 
 ReactDOM.render(<Geeting/>, document.getElementById('root'))
